@@ -87,8 +87,8 @@ header nav li input {
 main {
     display: flex;
     flex-direction: row;
-    margin: 3rem 18rem 0rem 3rem;
-    justify-content: space-around;
+    margin: 3rem 4rem 0rem 4rem;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 content {
@@ -108,23 +108,23 @@ rem
 #img-1 {
     height: 75%;
     top: 13%;
-    right: 37%;
+    right: 58%;
 }
 
 #img-2 {
-    left: 45%;
+    left: 22%;
     z-index: 1;
     box-shadow: 1px 4px 8px 1px black;
 }
 
 #img-3 {
     height: 75%;
-    left: 75%;
+    left: 48%;
     top: 13%;
 }
 .slider-img {
     height: 100%;
-    width: 50%;
+    width: 45%;
     position: absolute;
     transition: 0.4s;
 }
@@ -132,7 +132,7 @@ rem
 
     .text {
         margin-bottom: 1.5rem;
-        font-size: 2.0rem;
+        font-size: 2.5rem;
         color: orangered;
         font-weight: 600;
         font-family: monospace;
@@ -146,7 +146,7 @@ rem
     }
 
     #latest-release{
-        height: 25rem;
+        height: 70rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -163,17 +163,42 @@ rem
         flex-direction: row;
         width: 45%;
         height: 70%;
+        flex-wrap: wrap;
     }
+
+    .latest-releases-songs2 {
+        display: flex;
+        flex-direction: row;
+        width: 45%;
+        height: 70%;
+        flex-wrap: wrap;
+    }
+
 
     .latest-releases-songs .title {
         margin: 1rem;
         line-height: 1.5rem;
     }
+
+    .latest-releases-songs2 .title {
+        margin: 1rem;
+        line-height: 1.5rem;
+    }
+
     .latest-releases-songs .time {
         color: white;
         margin-left: auto;
     }
+
+    .latest-releases-songs2 .time {
+        color: white;
+        margin-left: auto;
+    }
     .latest-releases-songs img {
+        height: 100%;
+        width: 100%;
+    }
+    .latest-releases-songs2 img {
         height: 100%;
         width: 100%;
     }
@@ -217,6 +242,86 @@ rem
         width: 33px;
         margin: 2px;
     }
+
+    aside .heading {
+        margin-bottom: 0rem;
+    }
+
+    .text2 {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+        font-family: monospace;
+    }
+    
+
+    
+    ul {
+        display: inline;
+        list-style: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    
+    .queue {
+        width: 53%;
+        height: 101px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        /* border: 2px solid white; */
+    }
+    .q-img-container {
+        height: 3rem;
+        width: 2rem;
+        margin-right: 4.6rem;
+        position: relative;
+    }
+    .q-img-container img {
+        height: 100%;
+        width: 175%;
+    }
+    .q-img-container .play-btn {
+        font-size: 0.8rem;
+    }
+    .queue i {
+        margin-left: auto;
+        color: white;
+        align-self: flex-start;
+    }
+    .play-btn {
+        display: none;
+        position: absolute;
+        color: white;
+        left: 45%;
+        top: 45%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    i {
+        color: #fff;
+    }
+ 
+.sub-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    position: relative;
+}
+    
 
     @media only screen and (max-width: 1040px){
         header nav ul{

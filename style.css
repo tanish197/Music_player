@@ -274,7 +274,7 @@ rem
         height: 101px;
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         /* border: 2px solid white; */
     }
     .q-img-container {

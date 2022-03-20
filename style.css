@@ -131,7 +131,7 @@ rem
 
 
     .text {
-        margin-bottom: 4.5rem;
+        margin-bottom: 3.5rem;
         font-size: 2.5rem;
         color: orangered;
         font-weight: 600;
@@ -322,6 +322,52 @@ rem
     font-weight: 600;
     font-family: monospace;
     position: relative;
+}
+
+#popular-artists {
+    display: flex;
+    flex-direction: row;
+    height: 9rem;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 1rem;
+    /* border: 2px solid white; */
+}
+
+.singers {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-width: 6rem;
+    /* border: 2px solid white; */
+}
+
+.rounded-img-container {
+    height: 80%;
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px 1px black;
+    position: relative;
+}
+
+.rounded-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.play-btn {
+    display: none;
+    position: absolute;
+    color: white;
+    left: 45%;
+    top: 45%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.singers p {
+    text-align: center;
 }
     
 
